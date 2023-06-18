@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="syle.css">
+</head>
+
+<body>
+    <div class="containerr">
+        <section class="sec1">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo">
+                <ul>
+                    <li class="li"><a href="" class="aa">Home</a></li>
+                    <li class="li"><a href="#about" class="aa">About</a></li>
+                    <li><a href="index2.html" class="aa">menu</a></li>
+                    <li><a href="#contact" class="aa">contact</a></li>
+                    <!-- <li><a href="">Home</a></li> -->
+
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="title">
+                    <h1 class="fire">SPICY</h1>
+
+                    <img src="images/chill.png" alt="" class="imgc">
+                </div>
+            </div>
+            <div class="text">
+                <h4> </h4>
+                <a href="#" class="btn">View Menu</a>
+            </div>
+        </section>
+    </div>
+    <section id="about">
+        <div class="heading">
+            <h1>It's Hot & Spicy </h1><br>
+        </div>
+        <div class="contentt">
+
+            <div class="textt">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quasi a consequatur? Cum
+                    exercitationem, dolore velit porro ipsam doloribus facilis, ad nemo amet quo explicabo,
+                    necessitatibus sint quos nisi. Rerum quo eius cum nostrum nam!</p>
+            </div>
+            <div class="textt">
+                <a href="#"><button type="button" class="but">Order Now</button></a>
+
+            </div>
+            <div class="slider" >
+                <div class="new">
+                    <img class="mySlides" src="images/french_fries.png" style="width:70%">
+                    <img class="mySlides" src="images/burger_fries.png" style="width:70%">
+                    <img class="mySlides" src="images/fried_chicken.png" style="width:70%">
+                    <img class="mySlides" src="images/burger.png" style="width:70%">
+                  
+                    <div class="btn">
+                        <button class="btn1" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="btn2" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                  </div>
+    
+            </div class="slider">
+    </section>
+    <br><br><br>
+
+    <section id="contact">
+        <div class="foot">
+            <ul class="sci">
+                <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="logo-google"></ion-icon></a></li>
+            </ul>
+<div class="pn">
+ 
+    <span class="prev"></span>
+ 
+    <span class="next"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+
+</div>
+
+        </div >
+    </section>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+</body>
+
+</html>
